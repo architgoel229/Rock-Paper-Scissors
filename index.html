@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="humanScore">
+        <h1>Hooman(You):</h1>
+        <p>0</p>
+    </div>
+    <div class="aiScore">
+        <h1>AI:</h1>
+        <p>0</p>
+    </div>
+    <main>
+        <div class="game">
+            <div class="status">
+                <h2></h2>
+            </div>
+            <h1>ROCK, PAPER, SCISSORS</h1>
+            
+            <div class="buttons">
+                <button onclick='reset();
+                rockp();
+                aichoice();
+                rockclick();
+                update();
+                verify();'>👊</button>
+                <button onclick='reset();
+                paperp();
+                aichoice();
+                paperclick();
+                update();
+                verify();'>🖐</button>
+                <button onclick='reset();
+                scissorp();
+                aichoice();
+                scissorclick();
+                update();
+                verify();'>✌&nbsp;</button>
+            </div>
+            <div class="restart">
+                <button onclick="
+                    document.querySelector('.restart a').click()">New Game</button>
+                <a href="/index.html"></a>
+            </div>
+        </div>
+        <div class="scorecard">
+            <h1>SCORECARD</h1>
+            <table>
+                <thead>
+                    <th>Hooman(You)</th>
+                    <th>Status</th>
+                    <th>AI</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="rock"><img src="images/stone.png" alt=""></div>
+        <div class="rockai"><img src="images/stone.png" alt=""></div>
+        <div class="paper"><img src="images/paper (1).png" alt=""></div>
+        <div class="paperai"><img src="images/paper (1).png" alt=""></div>
+        <div class="scissor"><img src="images/scissor.png" alt=""></div>
+        <div class="scissorai"><img src="images/scissor.png" alt=""></div>
+        
+    </main>
+</body>
+<script src="index.js" ></script>
+</html>
